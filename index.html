@@ -3,70 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Personal Website</h1>
-    <p>Explore my CV, projects, and areas of interest!</p>
-    <button onclick="showCV()">Show CV</button>
-    <button onclick="showProjects()">Show Projects</button>
-    <button onclick="showInterests()">Show Areas of Interest</button>
-
-    <div id="cv" style="display: none;">
-        <h2>My CV</h2>
-        <!-- Add your CV content here -->
-        <p>Software Engineer with expertise in AI and machine learning.</p>
-    </div>
-
-    <div id="projects" style="display: none;">
-        <h2>My Projects</h2>
-        <!-- Add your projects content here -->
+    <!-- Navigation -->
+    <nav>
         <ul>
-            <li>Project 1: Sentiment Analysis using Natural Language Processing</li>
-            <li>Project 2: Image Classification with Convolutional Neural Networks</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div id="interests" style="display: none;">
-        <h2>Areas of Interest</h2>
-        <!-- Add your interests content here -->
-        <p>Passionate about deep learning, data visualization, and ethical AI.</p>
-    </div>
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>Alaxe Smith</h1>
+        <p>Software Engineer | AI Enthusiast</p>
+        <button>Hire Me</button>
+    </section>
 
-    <script>
-        function showCV() {
-            document.getElementById("cv").style.display = "block";
-            document.getElementById("projects").style.display = "none";
-            document.getElementById("interests").style.display = "none";
-        }
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm passionate about creating intelligent software solutions using AI and machine learning.</p>
+    </section>
 
-        function showProjects() {
-            document.getElementById("cv").style.display = "none";
-            document.getElementById("projects").style.display = "block";
-            document.getElementById("interests").style.display = "none";
-        }
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Building a sentiment analysis model using NLP.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Image classification with CNNs.</p>
+        </div>
+    </section>
 
-        function showInterests() {
-            document.getElementById("cv").style.display = "none";
-            document.getElementById("projects").style.display = "none";
-            document.getElementById("interests").style.display = "block";
-        }
-    </script>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's collaborate! Reach out via email: <a href="mailto:alaxe@example.com">alaxe@example.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Alaxe Smith</p>
+    </footer>
+
+    <!-- JavaScript for interactivity (optional) -->
+    <script src="script.js"></script>
 </body>
 </html>
