@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Personal Website</h1>
+    <p>Explore my CV, projects, and areas of interest!</p>
+    <button onclick="showCV()">Show CV</button>
+    <button onclick="showProjects()">Show Projects</button>
+    <button onclick="showInterests()">Show Areas of Interest</button>
+
+    <div id="cv" style="display: none;">
+        <h2>My CV</h2>
+        <!-- Add your CV content here -->
+        <p>Software Engineer with expertise in AI and machine learning.</p>
+    </div>
+
+    <div id="projects" style="display: none;">
+        <h2>My Projects</h2>
+        <!-- Add your projects content here -->
+        <ul>
+            <li>Project 1: Sentiment Analysis using Natural Language Processing</li>
+            <li>Project 2: Image Classification with Convolutional Neural Networks</li>
+        </ul>
+    </div>
+
+    <div id="interests" style="display: none;">
+        <h2>Areas of Interest</h2>
+        <!-- Add your interests content here -->
+        <p>Passionate about deep learning, data visualization, and ethical AI.</p>
+    </div>
+
+    <script>
+        function showCV() {
+            document.getElementById("cv").style.display = "block";
+            document.getElementById("projects").style.display = "none";
+            document.getElementById("interests").style.display = "none";
+        }
+
+        function showProjects() {
+            document.getElementById("cv").style.display = "none";
+            document.getElementById("projects").style.display = "block";
+            document.getElementById("interests").style.display = "none";
+        }
+
+        function showInterests() {
+            document.getElementById("cv").style.display = "none";
+            document.getElementById("projects").style.display = "none";
+            document.getElementById("interests").style.display = "block";
+        }
+    </script>
+</body>
+</html>
